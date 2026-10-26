@@ -1,5 +1,8 @@
 # Ad Astra StellarView Compatibility
 
+<a href="https://modrinth.com/mod/adastra-stellarview-compatibility"><img src="https://img.shields.io/modrinth/dt/adastra-stellarview-compatibility?style=for-the-badge&logo=modrinth&color=626e7b" alt="Modrinth"></a>
+<a href="https://www.curseforge.com/minecraft/mc-mods/adastra-stellarview-compatibility"><img src="https://img.shields.io/curseforge/dt/1584126?style=for-the-badge&logo=curseforge&color=626e7b" alt="Curseforge"></a>
+
 Disables Ad Astra custom sky and configures StellarView for every planet.
 
 ## Dependencies
