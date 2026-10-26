@@ -21,9 +21,18 @@ sourceSets.main.resources {
 }
 
 repositories {
-    maven {
-        name = "Team Resourceful Maven"
-        url "https://maven.teamresourceful.com/repository/maven-public/"
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Team Resourceful Maven"
+                url "https://maven.teamresourceful.com/repository/maven-public/"
+            }
+        }
+        filter {
+            includeGroupByRegex "earth\\.terrarium\\..*"
+            includeGroupByRegex "com\\.teamresourceful\\..*"
+            includeGroup "com.teamresourceful"
+        }
     }
     exclusiveContent {
         forRepository {
@@ -110,7 +119,15 @@ configurations {
 dependencies {
     runtimeOnly "maven.modrinth:stellarview:${stellarview_modrinth_version}"
     runtimeOnly "maven.modrinth:stellar-view-mixin-renderer:${stellarview_mixin_renderer_modrinth_version}"
-//    implementation "maven.modrinth:ad-astra:${adastra_modrinth_version}"
+    runtimeOnly ("earth.terrarium.adastra:adastra:${adastra_version}") {
+        capabilities {
+            requireCapability("earth.terrarium.adastra:adastra-neoforge")
+        }
+    }
+
+    runtimeOnly "com.teamresourceful.resourcefullib:resourcefullib-neoforge-1.21:${resourcefullib_version}"
+    runtimeOnly "com.teamresourceful.resourcefulconfig:resourcefulconfig-neoforge-1.21:${resourcefulconfig_version}"
+    runtimeOnly "earth.terrarium.common_storage_lib:common-storage-lib-neoforge-1.21.1:${csl_version}"
 
     // local compiled adastra for 1.21.1
     /*runtimeOnly('earth.terrarium.adastra:adastra:1.16.6') {
