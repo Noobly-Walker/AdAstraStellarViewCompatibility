@@ -81,6 +81,20 @@ Disables Ad Astra custom sky and configures StellarView for every planet.
 
 Venus is not included because the planet has dense atmosphere and sky is not visible.
 
+## The used numbers
+
+- Earth Orbit
+  - The first idea was to use the [ISS](https://en.wikipedia.org/wiki/International_Space_Station) orbit. 
+However, because the station is so close to Earth, the in-game immersion from looking at few huge pixels of the Earth texture is not great.
+  - The Earth orbit dimension is set to orbit at `26 571` km from the center of Earth.
+  - [GPS satellites](https://www.gps.gov/space-segment) are in medium Earth orbit at ~`20 200` km above sea level (plus [Earth radius](https://en.wikipedia.org/wiki/Earth_radius) `6 371`km gives `26 571` km)
+  - This gives the immersion similar to original Ad Astra while also using a real number.
+- Lunar Orbit
+  - Tha orbit around the Moon is `20 000` km, which is the upper bound of [high lunar obit](https://en.wikipedia.org/wiki/Lunar_orbit#Lunar_high_orbits).
+
+
+- Orbit speeds are set to Minecraft day, although the Sun is not aligned with the day-light cycle, setting higher speeds could cause nausea for certain users.
+
 ## Notes
 The planets are configured in the same way as for Stellaris compatibility
 
