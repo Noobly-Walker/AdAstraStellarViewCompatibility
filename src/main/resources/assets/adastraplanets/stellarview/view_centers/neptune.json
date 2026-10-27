@@ -1,0 +1,22 @@
+{
+	"view_center": "stellarview:planet/milky_way/sol/neptune",
+	"rotation_period": 24000,
+	"axis_rotation": { "x_axis": 90, "y_axis": 0, "z_axis": -110 },
+	"day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 0.4,
+		"max_visible_size": 0.8
+	},
+	"sun_day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 0.4,
+		"max_visible_size": 0.8
+	},
+	"create_horizon": false,
+	"create_void": false,
+	"stars": {
+		"during_day": false,
+		"ignore_rain": true,
+		"ignore_fog": true
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"view_center": "stellarview:moon/milky_way/sol/saturn/titan",
+	"axis_rotation": { "x_axis": 90, "y_axis": 0, "z_axis": -180 },
+	"rotation_period": 384000,
+	"day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 10,
+		"max_visible_size": 30
+	},
+	"sun_day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 10,
+		"max_visible_size": 30
+	},
+	"create_horizon": false,
+	"create_void": false,
+	"stars": {
+		"during_day": false,
+		"ignore_rain": true,
+		"ignore_fog": false
+	}
+}

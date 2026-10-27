@@ -1,0 +1,22 @@
+{
+	"view_center": "stellarview:moon/milky_way/sol/saturn/iapetus",
+	"axis_rotation": { "x_axis": 90, "y_axis": 0, "z_axis": 0 },
+	"rotation_period": 1920000,
+	"day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 1,
+		"max_visible_size": 2
+	},
+	"sun_day_blending": {
+		"max_brightness": 1,
+		"min_visible_size": 1,
+		"max_visible_size": 2
+	},
+	"create_horizon": false,
+	"create_void": false,
+	"stars": {
+		"during_day": true,
+		"ignore_rain": true,
+		"ignore_fog": true
+	}
+}
